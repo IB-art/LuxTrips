@@ -195,7 +195,7 @@ h1 {
 .top__img-bottom {
   position: absolute;
   width: 100%;
-  bottom: -1;
+  bottom: -1px;
   height: 410px;
 }
 
