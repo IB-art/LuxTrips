@@ -171,6 +171,13 @@ body {
   text-transform: uppercase;
   color: #0c0b10;
   margin-bottom: 60px;
+  transform: scale3d(1, 1, 1) rotateY(500deg);
+  opacity: 0;
+}
+.top__text._active {
+  transform: scale3d(1, 1, 1) rotateY(0deg);
+  transition: all 0.8s ease 0s;
+  opacity: 1;
 }
 
 h1 {
@@ -184,6 +191,14 @@ h1 {
   margin: 0 auto;
   text-align: center;
   width: 940px;
+  transform: translate(0px, 115%);
+  opacity: 0;
+}
+
+h1._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
 }
 
 .top__img {
@@ -211,6 +226,14 @@ h2 {
   color: #fcfcfc;
   width: 100%;
   bottom: 325px;
+  transform: translate(0px, 115%);
+  opacity: 0;
+}
+
+h2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 
 .romb,
@@ -620,6 +643,13 @@ input[type="date"] {
   margin-bottom: 58px;
   margin-top: -55px;
   position: relative;
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+.products__title._active {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
 }
 
 .products__inner {
@@ -790,6 +820,14 @@ input[type="date"] {
   width: 214px;
   margin-bottom: 30px;
   margin-top: 120px;
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+
+.luxury__title._active {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
 }
 
 .luxury__button {
@@ -919,6 +957,22 @@ input[type="date"] {
   width: 184px;
   margin-bottom: 74px;
   position: relative;
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+
+.trips__title,
+.plan__title {
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+.plan__title._active,
+.trips__title._active,
+.book__title._active,
+.reviews__title._active {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: all 0.8s ease 0s;
 }
 
 .book__title::before,
